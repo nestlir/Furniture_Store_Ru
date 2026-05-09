@@ -229,10 +229,12 @@ function renderCart() {
     : '<p class="empty-state">Заявка пока пустая. Добавьте товары из каталога.</p>';
 
   const message = detailed.length
-    ? "Здравствуйте, Анжела Валерьевна! Хочу уточнить наличие и стоимость: " +
+    ? "Заявка для MAX на номер +7 (906) 435-18-43: " +
       detailed.map((item) => `${item.title} (${item.qty} шт.)`).join(", ")
-    : "Здравствуйте, Анжела Валерьевна! Хочу получить консультацию по мебели.";
-  sendRequest.href = `https://t.me/share/url?url=&text=${encodeURIComponent(message)}`;
+    : "Напишите в MAX на номер +7 (906) 435-18-43, чтобы получить консультацию по мебели.";
+  sendRequest.href = "https://max.ru/";
+  sendRequest.setAttribute("aria-label", message);
+  sendRequest.title = message;
 }
 
 function deleteProduct(id) {
