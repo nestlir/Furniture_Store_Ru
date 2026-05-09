@@ -1,0 +1,20 @@
+.header__logo,
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.header__logo:hover,
+.footer__logo:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.header__logo-image,
+.footer__logo {
+  object-fit: contain;
+}

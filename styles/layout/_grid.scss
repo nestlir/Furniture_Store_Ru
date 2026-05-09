@@ -1,0 +1,16 @@
+// Сетка
+.about__grid,
+.location__grid,
+.contact__grid {
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 992px) {
+  .about__grid,
+  .location__grid,
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

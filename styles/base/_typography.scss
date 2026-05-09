@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-weight: 400;
+
+  letter-spacing: -0.03em;
+}
+
+.hero__title {
+  font-size: clamp(72px, 7vw, 104px);
+  line-height: 0.93;
+}
+
+.section-title {
+  position: relative;
+
+  margin-bottom: 52px;
+
+  font-size: clamp(56px, 5vw, 78px);
+  line-height: 1;
+}
+
+.section-title::after {
+  content: "";
+
+  display: block;
+
+  width: 72px;
+  height: 2px;
+
+  margin-top: 18px;
+
+  background: var(--color-accent);
+}
+
+.section-title_centered {
+  text-align: center;
+}
+
+.section-title_centered::after {
+  margin-inline: auto;
+}
+
+p,
+li {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.85;
+
+  color: var(--color-text-soft);
+}

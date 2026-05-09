@@ -1,0 +1,30 @@
+.header__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__contact-name {
+  color: var(--color-text-soft);
+  font-size: 14px;
+}
+
+.header__whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.header__whatsapp:hover {
+  transform: scale(1.06);
+  opacity: 0.8;
+}

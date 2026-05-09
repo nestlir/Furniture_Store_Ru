@@ -1,0 +1,49 @@
+.audience {
+  background: rgba(255,255,255,0.24);
+}
+
+.audience__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.audience-card {
+  padding: 56px 34px;
+
+  background: var(--color-surface);
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  box-shadow: var(--shadow-soft);
+
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.audience-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.audience-card_featured {
+  background: var(--color-surface-soft);
+}
+
+.audience-card__icon {
+  margin-bottom: 24px;
+
+  font-size: 42px;
+
+  color: var(--color-accent);
+}
+
+.audience-card__title {
+  margin-bottom: 12px;
+
+  font-size: 44px;
+}

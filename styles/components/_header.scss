@@ -1,0 +1,85 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 108px;
+  background: rgba(247, 244, 238, 0.98);
+  border-bottom: 1px solid #e7e0d5;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 220px 1fr 360px;
+  align-items: center;
+
+  width: min(1760px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.header__logo-image {
+  width: 182px;
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 54px;
+  align-items: center;
+}
+
+.header__menu-link {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2f2a26;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.header__menu-link:hover {
+  color: #8a9476;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.header__messenger,
+.header__telegram {
+  width: 58px;
+  height: 58px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8d2c7;
+  border-radius: 50%;
+
+  font-size: 24px;
+  color: #8a9476;
+}
+
+.header__phone {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2f2a26;
+  line-height: 1.1;
+}
+
+.header__contact-name {
+  font-size: 24px;
+  color: #6f6a63;
+  margin: 0;
+}

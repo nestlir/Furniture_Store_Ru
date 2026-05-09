@@ -1,0 +1,3 @@
+[submodule "libs/bootstrap-icons"]
+	path = libs/bootstrap-icons
+	url = https://github.com/twbs/icons.git

@@ -1,0 +1,17 @@
+.catalog {
+  padding-block: 80px;
+}
+
+.catalog__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 280px;
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+
+  color: var(--color-text-soft);
+  font-size: 18px;
+}

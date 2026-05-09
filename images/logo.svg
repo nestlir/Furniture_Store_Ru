@@ -1,0 +1,47 @@
+<!-- =========================
+FULL LOGO (logo.svg)
+========================= -->
+<svg width="820" height="220" viewBox="0 0 820 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4A64A"/>
+      <stop offset="100%" stop-color="#F2D28B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(30,30)">
+    <!-- Stylized house + chair -->
+    <path d="M70 10L130 55V145C130 151 125 156 119 156H81C75 156 70 151 70 145V10Z" fill="#0F2747"/>
+    <path d="M20 70L100 10L180 70" stroke="url(#gold)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Chair / furniture element -->
+    <rect x="88" y="82" width="24" height="42" rx="4" fill="url(#gold)"/>
+    <rect x="82" y="124" width="36" height="10" rx="3" fill="url(#gold)"/>
+    <line x1="86" y1="134" x2="86" y2="150" stroke="url(#gold)" stroke-width="5"/>
+    <line x1="114" y1="134" x2="114" y2="150" stroke="url(#gold)" stroke-width="5"/>
+  </g>
+
+  <!-- Brand Name -->
+  <text x="250" y="110"
+        font-family="Montserrat, Arial, sans-serif"
+        font-size="82"
+        font-weight="700"
+        letter-spacing="8"
+        fill="#0F2747">
+    РУСЬ
+  </text>
+
+  <!-- Tagline -->
+  <text x="254" y="155"
+        font-family="Montserrat, Arial, sans-serif"
+        font-size="26"
+        font-weight="500"
+        letter-spacing="4"
+        fill="#6B7280">
+    МЕБЕЛЬНЫЙ МАГАЗИН
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="250" y1="172" x2="650" y2="172" stroke="url(#gold)" stroke-width="3"/>
+</svg>

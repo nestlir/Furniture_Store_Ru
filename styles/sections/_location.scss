@@ -1,0 +1,42 @@
+.location__grid,
+.contact__grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  align-items: stretch;
+}
+
+.location__content,
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 420px;
+  height: 100%;
+
+  padding: 64px;
+  background: rgba(255,255,255,0.82);
+}
+
+.location__map-wrapper,
+.contact__image-wrapper {
+  min-height: 420px;
+  height: 100%;
+}
+
+.location__map,
+.contact__image {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+
+  object-fit: cover;
+  border: none;
+}
+
+.location__content .bi-geo-alt,
+.contact__content .bi-person {
+  font-size: 54px;
+  color: #8a9476;
+  margin-right: 14px;
+}
