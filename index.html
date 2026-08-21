@@ -17,29 +17,15 @@
   <link rel="stylesheet" href="libs/bootstrap-icons/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "FurnitureStore"],
-      "name": "РУСЬ",
-      "description": "Мебельный магазин и интерьерный шоурум в Адлере.",
-      "address": {"@type": "PostalAddress", "addressLocality": "Сочи, Адлер", "streetAddress": "ул. Авиационная, 19а", "addressCountry": "RU"},
-      "telephone": "+79064351843",
-      "areaServed": ["Сочи", "Адлер", "Абхазия"],
-      "foundingDate": "2006"
-    }
+    {"@context":"https://schema.org","@type":["LocalBusiness","FurnitureStore"],"name":"РУСЬ","description":"Мебельный магазин и интерьерный шоурум в Адлере.","address":{"@type":"PostalAddress","addressLocality":"Сочи, Адлер","streetAddress":"ул. Авиационная, 19а","addressCountry":"RU"},"telephone":"+79064351843","areaServed":["Сочи","Адлер","Абхазия"],"foundingDate":"2006"}
   </script>
 </head>
 <body>
   <header class="site-header" data-header>
     <div class="site-header__inner">
-      <a class="brand" href="#hero" aria-label="РУСЬ - на главный экран" data-logo-link>
-        <span class="brand__name">РУСЬ</span><span class="brand__caption">интерьерные решения</span>
-      </a>
-      <nav class="site-nav" aria-label="Основная навигация" data-nav>
-        <a href="#catalog">Каталог</a><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#map">Карта</a><a href="#contacts">Контакты</a>
-      </nav>
+      <a class="brand" href="#hero" aria-label="РУСЬ - на главный экран" data-logo-link><span class="brand__name">РУСЬ</span><span class="brand__caption">интерьерные решения</span></a>
+      <nav class="site-nav" aria-label="Основная навигация" data-nav><a href="#catalog">Каталог</a><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#map">Карта</a><a href="#contacts">Контакты</a></nav>
       <div class="header-actions">
-        <a class="portfolio-mode-link" href="portfolio.html" aria-label="Открыть портфолио Full-stack Developer">Full-stack ↗</a>
         <a class="icon-link" href="https://max.ru/" target="_blank" rel="noopener" aria-label="Написать в MAX"><i class="bi bi-chat-dots"></i></a>
         <a class="icon-link" href="https://t.me/Furniture_Store_Ru" target="_blank" rel="noopener" aria-label="Telegram канал РУСЬ"><i class="bi bi-telegram"></i></a>
         <a class="header-phone" href="tel:+79064351843"><span>+7 (906) 435-18-43</span><small>Анжела Валерьевна</small></a>
@@ -47,7 +33,6 @@
       </div>
     </div>
   </header>
-
   <main>
     <section class="hero" id="hero"><div class="hero__content reveal"><h1>Создаём уют в вашем доме с 2006 года</h1><p>Качественная мебель и интерьерные решения для любого стиля и бюджета. Индивидуальный подход, надёжные материалы и внимание к каждой детали.</p><div class="hero__actions"><a class="button button_primary" href="#catalog">Перейти в каталог</a><a class="button button_ghost" href="#seller">Кабинет продавца</a></div></div></section>
     <section class="shop-section" id="catalog"><div class="section-heading reveal"><p class="section-heading__label">Интернет-магазин</p><h2>Каталог мебели</h2><span>Выбирайте товары, добавляйте в заявку и отправляйте менеджеру в один клик.</span></div><div class="shop-layout"><aside class="shop-panel reveal" aria-label="Фильтры каталога"><label class="field"><span>Поиск</span><input type="search" placeholder="Диван, спальня, стол..." data-search></label><label class="field"><span>Категория</span><select data-category-filter><option value="all">Все категории</option></select></label><div class="filter-row" data-price-filter><button class="chip is-active" type="button" data-price="all">Все</button><button class="chip" type="button" data-price="economy">До 50 000 ₽</button><button class="chip" type="button" data-price="middle">50-120 000 ₽</button><button class="chip" type="button" data-price="premium">120 000 ₽+</button></div><button class="button button_dark button_full" type="button" data-open-cart><i class="bi bi-bag"></i>Заявка <span data-cart-count>0</span></button></aside><div class="catalog-grid" data-products></div></div></section>
