@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Anastasia Kuzmina — Frontend / Full-stack Developer portfolio.">
+  <title>Anastasia Kuzmina — Full-stack Developer</title>
+  <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body class="portfolio-page" data-mode="fullstack">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="portfolio-header">
+    <a class="portfolio-logo" href="portfolio.html">AK<span>/</span>DEV</a>
+    <nav class="portfolio-nav" aria-label="Portfolio navigation">
+      <a href="#stack">Stack</a>
+      <a href="#work">Selected work</a>
+      <a href="#cases">Case studies</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="mode-switch" href="index.html" aria-label="Switch to Frontend portfolio">
+      <span class="mode-switch__dot"></span>
+      <span class="mode-switch__from">Frontend</span>
+      <span class="mode-switch__arrow">↗</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="portfolio-hero" aria-labelledby="hero-title">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="mono">00—</span> Full-stack Developer</p>
+        <h1 id="hero-title">I build the parts<br><em>users never see.</em></h1>
+        <p class="hero-lead">Interfaces, APIs, data flows and the infrastructure that connects them. Product-minded development with a sharp eye for interaction and detail.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#work">Explore selected work <span>↓</span></a>
+          <a class="btn btn-soft" href="index.html">View Frontend side <span>↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-note note-sticker">systems<br><span>&amp; details</span></aside>
+      <div class="hero-metrics">
+        <div><strong>JS</strong><span>TypeScript</span></div>
+        <div><strong>UI</strong><span>Product thinking</span></div>
+        <div><strong>API</strong><span>Backend logic</span></div>
+      </div>
+      <div class="hero-sketch" aria-hidden="true">
+        <span class="sketch-line"></span><span class="sketch-line short"></span><span class="sketch-node node-a"></span><span class="sketch-node node-b"></span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Skills">
+      <div class="ticker-track"><span>TYPE SCRIPT</span><span>JAVASCRIPT</span><span>REACT</span><span>NODE.JS</span><span>REST API</span><span>HTML / CSS</span><span>GIT</span><span>UX THINKING</span><span>TYPE SCRIPT</span><span>JAVASCRIPT</span><span>REACT</span></div>
+    </section>
+
+    <section id="stack" class="portfolio-section stack-section">
+      <div class="section-intro reveal"><p class="eyebrow"><span class="mono">01—</span> Stack</p><h2>The toolbox<br><em>behind the interface.</em></h2><p>Not a list of buzzwords — a practical toolkit used to move from screen to working product.</p></div>
+      <div class="stack-layout">
+        <div class="stack-grid reveal">
+          <article class="stack-card large"><span class="card-index">01</span><div class="stack-icon">TS</div><h3>TypeScript / JavaScript</h3><p>Component logic, browser APIs, data transformation and maintainable application code.</p><div class="mini-bar"><i style="width:92%"></i></div></article>
+          <article class="stack-card"><span class="card-index">02</span><div class="stack-icon">RE</div><h3>React</h3><p>Reusable UI, state, forms, async flows and responsive interaction patterns.</p><div class="mini-bar"><i style="width:88%"></i></div></article>
+          <article class="stack-card accent"><span class="card-index">03</span><div class="stack-icon">API</div><h3>Node.js / REST</h3><p>Endpoints, validation, integration logic and the seam between product and data.</p><div class="mini-bar"><i style="width:76%"></i></div></article>
+          <article class="stack-card"><span class="card-index">04</span><div class="stack-icon">SQL</div><h3>Data thinking</h3><p>Models, request shape, storage decisions and the user-facing consequences of backend design.</p><div class="mini-bar"><i style="width:67%"></i></div></article>
+          <article class="stack-card wide"><span class="card-index">05</span><div class="stack-icon">GIT</div><h3>Delivery &amp; debugging</h3><p>Git workflows, CI-minded habits, browser debugging, refactoring and shipping static sites through GitHub Pages.</p><div class="tag-row"><span>Git</span><span>CI</span><span>Debug</span><span>Refactor</span></div></article>
+        </div>
+        <aside class="stack-poster reveal"><span class="scribble">HOW I THINK</span><ol><li>Map the user task</li><li>Break the system</li><li>Choose the simplest layer</li><li>Ship → observe → refine</li></ol><div class="poster-rule"></div><p class="mono">frontend ≠ the whole product</p></aside>
+      </div>
+    </section>
+
+    <section id="work" class="portfolio-section work-section">
+      <div class="section-header-row reveal"><div><p class="eyebrow"><span class="mono">02—</span> Selected work</p><h2>Projects as <em>systems.</em></h2></div><p class="section-side-note">Each project is framed by the part of the system I actually built — not just the library used.</p></div>
+      <div class="project-wall">
+        <article class="project-card project-a reveal"><div class="project-media project-media-a"><span class="project-sticker">01 / SHOP</span><div class="wire-grid"><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-body"><div><span class="project-type">E-commerce frontend + product logic</span><h3>РУСЬ / Furniture Store</h3><p>Catalog interface, filters, product detail modal, cart flow, seller tooling and static deployment.</p></div><div class="role-stack"><span>UI architecture</span><span>State logic</span><span>Storage</span><span>GitHub Pages</span></div><a href="index.html" class="project-link">Open project ↗</a></div></article>
+        <article class="project-card project-b reveal"><div class="project-media project-media-b"><span class="project-sticker sticker-green">02 / PRODUCT</span><div class="diagram"><b>UI</b><span>→</span><b>DATA</b><span>→</span><b>USER</b></div></div><div class="project-body"><div><span class="project-type">Interactive web application</span><h3>Multimodal AI App</h3><p>A product-style interface where frontend state, inputs and asynchronous actions form one user flow.</p></div><div class="role-stack"><span>React</span><span>TypeScript</span><span>Async UI</span><span>Product flow</span></div><a href="https://github.com/nestlir/multimodal-ai-app" target="_blank" rel="noopener" class="project-link">View repository ↗</a></div></article>
+        <article class="project-card project-c reveal"><div class="project-media project-media-c"><span class="project-sticker sticker-pink">03 / BACKEND</span><div class="terminal-card"><span>$ route /api</span><span>200 OK</span><span>schema ✓</span></div></div><div class="project-body"><div><span class="project-type">Full-stack coursework system</span><h3>Web Larek / Express</h3><p>Frontend + server boundary: API requests, data contracts, product flows and integration debugging.</p></div><div class="role-stack"><span>Node.js</span><span>REST</span><span>Integration</span><span>Debugging</span></div><a href="https://github.com/nestlir/web-larek-express" target="_blank" rel="noopener" class="project-link">View repository ↗</a></div></article>
+      </div>
+    </section>
+
+    <section id="cases" class="portfolio-section cases-section">
+      <div class="section-intro reveal"><p class="eyebrow"><span class="mono">03—</span> Case studies</p><h2>What I actually<br><em>owned.</em></h2><p>A clearer view of responsibility: interface, state, integration and delivery.</p></div>
+      <div class="case-list">
+        <article class="case-item reveal"><div class="case-number">A</div><div class="case-main"><div class="case-top"><h3>Furniture Store</h3><span>2026</span></div><p class="case-question">How do you turn a static storefront into something that feels like a product?</p><div class="case-cols"><div><b>I designed</b><span>information hierarchy, cards, filtering, seller flow, dialogs</span></div><div><b>I developed</b><span>catalog rendering, local state, cart actions, auth gate and interactions</span></div><div><b>I shipped</b><span>GitHub repository + GitHub Pages deployment workflow</span></div></div></div><div class="case-mark">↗</div></article>
+        <article class="case-item reveal"><div class="case-number">B</div><div class="case-main"><div class="case-top"><h3>Web Larek</h3><span>2025</span></div><p class="case-question">Where does the frontend end — and how should it talk to the backend?</p><div class="case-cols"><div><b>I worked on</b><span>components, UI states and API-connected product flows</span></div><div><b>I learned</b><span>request lifecycles, validation, server/client boundaries and debugging</span></div><div><b>I optimized</b><span>the path from user action to network response and back to UI</span></div></div></div><div class="case-mark">↗</div></article>
+      </div>
+    </section>
+
+    <section id="engineering" class="portfolio-section engineering-section">
+      <div class="engineering-head reveal"><p class="eyebrow"><span class="mono">04—</span> Engineering</p><h2>The details are<br><em>the product.</em></h2></div>
+      <div class="engineering-grid">
+        <article class="eng-note reveal"><span class="eng-pin">◎</span><h3>State &amp; data</h3><p>Model what the interface needs before wiring interactions. Keep UI states explicit and recoverable.</p><span class="eng-code">state → render → action → state</span></article>
+        <article class="eng-note tilt reveal"><span class="eng-pin">✳</span><h3>System seams</h3><p>I care about handoffs: component → API, form → validation, click → network, build → deployment.</p><span class="eng-code">a seam is where bugs hide</span></article>
+        <article class="eng-note reveal"><span class="eng-pin">⌁</span><h3>Refactoring</h3><p>First make it work. Then remove duplication, clarify naming and make the next change cheaper.</p><span class="eng-code">clarity &gt; cleverness</span></article>
+        <div class="engineering-diagram reveal"><svg viewBox="0 0 700 330" role="img" aria-label="Frontend to backend system diagram"><path d="M70 160 H215 M275 160 H420 M480 160 H630"/><circle cx="70" cy="160" r="34"/><circle cx="245" cy="160" r="34"/><circle cx="450" cy="160" r="34"/><circle cx="630" cy="160" r="34"/><text x="70" y="165">UI</text><text x="245" y="165">STATE</text><text x="450" y="165">API</text><text x="630" y="165">DATA</text><path d="M245 194 C245 275 450 275 450 194"/><text x="305" y="292">feedback loop</text></svg></div>
+      </div>
+    </section>
+
+    <section id="experience" class="portfolio-section experience-section">
+      <div class="section-intro reveal"><p class="eyebrow"><span class="mono">05—</span> Experience</p><h2>A developer with<br><em>product range.</em></h2></div>
+      <div class="timeline reveal">
+        <div class="timeline-line"></div>
+        <article><span class="timeline-dot"></span><time>NOW</time><div><h3>Independent / Portfolio projects</h3><p>Full-stack and frontend builds, product concepts, refactors and deployment-oriented work.</p></div></article>
+        <article><span class="timeline-dot"></span><time>2024—25</time><div><h3>Web development</h3><p>Frontend applications, JavaScript/TypeScript, React, API integration, coursework systems and debugging.</p></div></article>
+        <article><span class="timeline-dot"></span><time>ACADEMIC</time><div><h3>Business Informatics</h3><p>Systems thinking, research, writing and the ability to connect technical implementation with business context.</p></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="portfolio-section contact-portfolio">
+      <div class="contact-grid reveal"><div><p class="eyebrow"><span class="mono">06—</span> Contact</p><h2>Have a system<br>in mind?</h2><p>Let's talk about the interface, the logic behind it and everything in between.</p></div><div class="contact-links"><a href="mailto:cassandreray@gmail.com">cassandreray@gmail.com <span>↗</span></a><a href="https://github.com/nestlir" target="_blank" rel="noopener">github.com/nestlir <span>↗</span></a><a href="index.html">Frontend portfolio <span>↗</span></a></div></div>
+      <div class="contact-doodle" aria-hidden="true">let's<br><em>build it.</em></div>
+    </section>
+  </main>
+
+  <footer class="portfolio-footer"><span>© 2026 Anastasia Kuzmina</span><span class="mono">DESIGN × CODE × SYSTEMS</span></footer>
+  <script src="scripts/portfolio.js"></script>
+</body>
+</html>
