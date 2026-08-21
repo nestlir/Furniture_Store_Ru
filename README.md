@@ -1,87 +1,54 @@
-# РУСЬ — мебельный шоурум и интернет-магазин
+# РУСЬ — Furniture Showroom & Commerce MVP
 
-Премиальный лендинг и MVP интернет-магазина мебельного магазина **«РУСЬ»** в Сочи / Адлере. Проект собирает витрину бренда, каталог товаров, заявку покупателя и демо-кабинет продавца в одном статическом сайте.
+> Premium furniture storefront combining brand presentation, catalog browsing and a lightweight seller workflow.
 
-![РУСЬ — мебельный шоурум](images/hero.jpg)
+[**Live project →**](https://github.com/nestlir/Furniture_Store_Ru)
 
-## Что внутри
+## Product overview
 
-- Premium landing page в спокойной интерьерной эстетике.
-- Каталог мебели с поиском, категориями и фильтром по цене.
-- Карточки товаров с изображением, описанием, размером и ценой.
-- Заявка-корзина с отправкой списка менеджеру.
-- Кабинет продавца для добавления карточек товара в текущем браузере.
-- Яндекс.Карта, контакты, SEO meta, Open Graph и Schema.org `FurnitureStore`.
-- Адаптивная вёрстка для mobile / tablet / desktop.
+«РУСЬ» is a premium showroom and e-commerce MVP for a furniture business in Sochi / Adler. The project combines a brand-led landing page with product discovery and a browser-based seller demo.
 
-## Технологии
+## Key capabilities
 
-- HTML5
-- CSS / SCSS architecture
-- Vanilla JavaScript
-- Bootstrap Icons
-- Local fonts: Inter + EB Garamond
-- GitHub Pages
+- premium editorial landing page;
+- furniture catalog with search and categories;
+- price filtering;
+- product cards with dimensions, description and price;
+- inquiry/cart flow for sending a product list to a manager;
+- seller cabinet prototype using localStorage;
+- Yandex Maps integration;
+- SEO metadata, Open Graph and Schema.org `FurnitureStore`;
+- responsive mobile/tablet/desktop layouts;
+- GitHub Pages deployment through GitHub Actions.
 
-## Структура
+## Product thinking
 
-```txt
-.
-├── index.html
-├── images/
-├── fonts/
-├── libs/bootstrap-icons/
-├── scripts/main.js
-├── styles/
-│   ├── main.css
-│   ├── main.scss
-│   ├── abstracts/
-│   ├── base/
-│   ├── components/
-│   ├── layout/
-│   ├── sections/
-│   └── utilities/
-└── .github/workflows/
+The experience deliberately treats the storefront as a brand as well as a catalog: visual atmosphere establishes trust first, while search, categories and product information provide the functional path to inquiry.
+
+## Architecture
+
+```text
+Landing / Brand
+      ↓
+Catalog → Product cards → Inquiry
+      ↓
+Seller demo → localStorage
 ```
 
-## Локальный запуск
+The seller cabinet is intentionally a static MVP. A production version would move authentication, inventory, image storage and order management to a backend/CMS.
 
-```powershell
+## Stack
+
+**HTML5 · CSS/SCSS · Vanilla JavaScript · Bootstrap Icons · Inter · EB Garamond · GitHub Actions · GitHub Pages**
+
+## Run locally
+
+```bash
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Открыть:
+Open `http://127.0.0.1:4173`.
 
-```txt
-http://127.0.0.1:4173
-```
+## Context
 
-## GitHub Pages
-
-Сайт публикуется через workflow `.github/workflows/pages.yml`.
-
-После push в ветку `main` или `master` GitHub Actions соберёт статический артефакт и развернёт сайт в GitHub Pages.
-
-## Важное про кабинет продавца
-
-Текущая версия кабинета — статический MVP на `localStorage`. Он подходит для демонстрации интерфейса и локального наполнения каталога в браузере продавца.
-
-Для боевого интернет-магазина следующий этап — backend или CMS:
-
-- серверная авторизация продавца;
-- база товаров;
-- загрузка изображений;
-- публикация товаров для всех посетителей;
-- заявки, статусы и уведомления менеджеру.
-
-## Release
-
-Первый публичный релиз: `v1.0.0`.
-
-Состав релиза:
-
-- премиальный landing page;
-- каталог товаров;
-- заявка покупателя;
-- кабинет продавца;
-- SEO и GitHub Pages deploy.
+Presented as a product/frontend case study demonstrating visual direction, responsive commerce UI, lightweight client-side state and deployment automation.
